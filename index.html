@@ -91,7 +91,8 @@
 	</section>
 	<section class="section">
 		<article id="post1" class="content">
-
+		</article>
+		<article id="post2" class="content">
 		</article>
 		<article class="media">
 				<picture class="media-left is-64x64">
@@ -182,16 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 	var converter = new showdown.Converter();
-	for (let index = 1; index < 11; index++) {
+	for (let index = 1; index <= 10; index++) {
 		
 		fetch(`post${index}.md`)
 		.then(response => response.text())
 		.then((data) => {
 			// console.log(converter.makeHtml(data))
 			document.querySelector(`#post${index}`).innerHTML = converter.makeHtml(data)
-			console.error(error)
-		}).catch(error => {
-			console.error(error)
 		})
 	}
 
