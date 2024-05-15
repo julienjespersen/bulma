@@ -90,7 +90,7 @@
 		</div>
 	</section>
 	<section class="section">
-		<article id="insert1">
+		<article id="insert1" class="content">
 
 		</article>
 		<article class="media">
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 fetch('foo.md')
   .then(response => response.text())
   .then((data) => {
-    console.log(data)
+    console.log(converter.makeHtml(data))
 	document.querySelector('#insert1').innerHTML = converter.makeHtml(data)
   })
 
