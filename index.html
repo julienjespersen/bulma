@@ -190,7 +190,7 @@ fetch('foo.md')
 
 	var converter = new showdown.Converter(),
     text      = '# hello, markdown!',
-    html      = converter.makeHtml(text);
+    html      = converter.makeHtml(data);
 
 	document.querySelector('#insert1').innerHTML = html
 
