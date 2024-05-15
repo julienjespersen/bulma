@@ -181,18 +181,18 @@ document.addEventListener('DOMContentLoaded', () => {
 <script src="showdown.min.js"></script>
 
 <script>
+	var converter = new showdown.Converter();
 fetch('foo.md')
   .then(response => response.text())
   .then((data) => {
     console.log(data)
+	document.querySelector('#insert1').innerHTML = converter.makeHtml(data)
   })
 
 
-	var converter = new showdown.Converter(),
-    text      = '# hello, markdown!',
-    html      = converter.makeHtml(data);
+    // html      = converter.makeHtml(data);
 
-	document.querySelector('#insert1').innerHTML = html
+	// document.querySelector('#insert1').innerHTML = html
 
 </script>
 
