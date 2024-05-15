@@ -189,6 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		.then((data) => {
 			// console.log(converter.makeHtml(data))
 			document.querySelector(`#post${index}`).innerHTML = converter.makeHtml(data)
+			console.error(error)
+		}).catch(error => {
+			console.error(error)
 		})
 	}
 
