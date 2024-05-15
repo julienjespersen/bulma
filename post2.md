@@ -4,4 +4,4 @@ La singularité de Carouge réside essentiellement dans la mise en place d'une p
 
 [Visitez le site de la commune!](https://carouge.ch)
 
-![Place de l’Octroi]([url/to/image](https://commons.wikimedia.org/wiki/File:Carouge-Octroi-2009.jpg#/media/Fichier:Carouge-Octroi-2009.jpg))
+![Place de l’Octroi](https://commons.wikimedia.org/wiki/File:Carouge-Octroi-2009.jpg#/media/Fichier:Carouge-Octroi-2009.jpg)
