@@ -90,7 +90,7 @@
 		</div>
 	</section>
 	<section class="section">
-		<article id="insert1" class="content">
+		<article id="post1" class="content">
 
 		</article>
 		<article class="media">
@@ -182,12 +182,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 	var converter = new showdown.Converter();
-fetch('foo.md')
-  .then(response => response.text())
-  .then((data) => {
-    console.log(converter.makeHtml(data))
-	document.querySelector('#insert1').innerHTML = converter.makeHtml(data)
-  })
+	for (let index = 1; index < 11; index++) {
+		const element = array[index];
+		
+		fetch(`post{$index}.md`)
+		.then(response => response.text())
+		.then((data) => {
+			console.log(converter.makeHtml(data))
+			document.querySelector(`#post{$index}`).innerHTML = converter.makeHtml(data)
+		})
+	}
 
 
     // html      = converter.makeHtml(data);
