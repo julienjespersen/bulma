@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		fetch(`post${index}.md`)
 		.then(response => response.text())
 		.then((data) => {
-			// console.log(converter.makeHtml(data))
+			console.log(converter.makeHtml(data))
 			document.querySelector(`#post${index}`).innerHTML = converter.makeHtml(data)
 		})
 	}
